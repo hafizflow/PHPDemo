@@ -15,7 +15,7 @@
                                 <div class="mt-1">
                                     <textarea id="content" name="content" rows="3"
                                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                        placeholder="Here's an idea for a note..."></textarea>
+                                        placeholder="Here's an idea for a note..."><?= $_POST['content'] ?? '' ?></textarea>
                                 </div>
 
                                 <?php if (isset($error['content'])): ?>
