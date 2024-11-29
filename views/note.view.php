@@ -11,7 +11,7 @@
         </p>
 
         <div>
-            <p> <?= $note['content'] ?> </p>
+            <p> <?= htmlspecialchars($note['content']) ?> </p>
         </div>
     </div>
 </main>
