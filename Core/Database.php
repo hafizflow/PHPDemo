@@ -1,5 +1,10 @@
 <?php
 
+
+namespace Core;
+
+use PDO;
+
 //! connect to the database
 
 class Database

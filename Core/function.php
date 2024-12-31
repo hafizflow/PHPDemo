@@ -1,5 +1,9 @@
 <?php
 
+
+// namespace Core;
+
+
 function dd($value)
 {
     echo '<pre>';
@@ -14,6 +18,7 @@ function urlIs($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
 }
+
 
 
 function authorized($condition, $status = Response::FORBIDDEN)
