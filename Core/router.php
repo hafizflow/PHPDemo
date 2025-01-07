@@ -1,11 +1,6 @@
 <?php
 
-
-// namespace Core;
-
-
 $routes = require base_path('routes.php');
-
 
 
 function route($uri, $routes)

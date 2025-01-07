@@ -1,8 +1,6 @@
 <?php
 
-
-// namespace Core;
-
+use Core\Response;
 
 function dd($value)
 {
@@ -30,6 +28,7 @@ function authorized($condition, $status = Response::FORBIDDEN)
 
 function base_path($path)
 {
+    // dd(BASE_PATH . $path);
     return BASE_PATH . $path;
 }
 

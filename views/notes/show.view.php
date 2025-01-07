@@ -13,6 +13,10 @@
         <div>
             <p> <?= htmlspecialchars($note['content']) ?> </p>
         </div>
+
+        <form method="POST" class="mt-6">
+            <button class="text-red-500 text-sm">Delete</button>
+        </form>
     </div>
 </main>
 
