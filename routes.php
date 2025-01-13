@@ -8,7 +8,7 @@ $router->get('/hello', 'controllers/hello.php');
 
 
 //? Notes related pages
-$router->get('/notes', 'controllers/notes/index.php');
+$router->get('/notes', 'controllers/notes/index.php')->only('auth');
 $router->get('/note', 'controllers/notes/show.php');
 $router->delete('/note', 'controllers/notes/destroy.php');
 
@@ -20,5 +20,5 @@ $router->post('/notes', 'controllers/notes/store.php');
 
 
 //? Auth related pages
-$router->get('/register', 'controllers/registration/create.php');
+$router->get('/register', 'controllers/registration/create.php')->only('guest');
 $router->post('/register', 'controllers/registration/store.php');
