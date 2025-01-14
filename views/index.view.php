@@ -7,7 +7,7 @@
 <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <!-- Your content -->
-        <p>This is Home Page</p>
+        <p> Hello <?= $_SESSION['user']['email'] ?? 'Guest' ?> ,This is Home Page</p>
     </div>
 </main>
 
