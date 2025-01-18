@@ -38,9 +38,7 @@ $user = $db->query('select * from users where email = :email', ['email' => $emai
             'password' => password_hash($password, PASSWORD_BCRYPT)
         ]);
 
-        $_SESSION['user'] = [
-            'email' => $email
-        ];
+        login($user);
 
         header('Location: /');
         exit;
