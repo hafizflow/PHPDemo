@@ -3,16 +3,14 @@
 use Core\Session;
 use Core\ValidationException;
 
-session_start();
 
 const BASE_PATH = __DIR__ . '/../';
+
+require BASE_PATH . '/vendor/autoload.php';
+
+session_start();
+
 require BASE_PATH . 'Core/function.php';
-
-
-spl_autoload_register(function ($class) {
-    $result = str_replace("\\", '/', $class);
-    require base_path("{$result}.php");
-});
 
 require base_path('bootstrap.php');
 

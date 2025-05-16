@@ -1,0 +1,26 @@
+{
+    "name": "hafizurrahman/demo",
+    "authors": [
+        {
+            "name": "hafizflow",
+            "email": "hafizur.rahman.cs@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^12.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
